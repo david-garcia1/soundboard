@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div >
+        <button>a</button>
+        <button>s</button>
+        <button>d</button>
+        <button>f</button>
+        <button>g</button>
+        <button>h</button>
+        <button id="david-button">
+            <audio id="david-audio"  src="./assets/fart-with-reverb.mp3"></audio>
+            <img id="david" src="./assets/david.jpg" alt="david">
+        </button>
+    </div>
+    <script>
+
+let davidBtn = document.getElementById('david-button');
+let davidAudio = document.getElementById('david-audio');
+
+davidBtn.addEventListener('click', function(){
+
+    davidAudio.play();
+    
+})
+
+
+
+    </script>
+</body>
+</html>
